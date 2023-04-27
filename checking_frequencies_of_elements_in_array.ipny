@@ -1,0 +1,14 @@
+# Count frequencies of all elements in array in Python
+
+# initializing the list
+array = [1, 1, 2, 5, 6, 2, 3, 4, 6, 8, 2, 1, 0, 0, 5, 3, 4]
+# initializing dic to store the elements
+elements_count = {}
+for element in array:  # iterating the elements for frequency
+    if element in elements_count:  # checking whether it is in dic or not
+        elements_count[element] += 1  # if it is increment to +1
+    else:
+        elements_count[element] = 1    # else setting count  to 1
+# printing the element frequencies
+for key, values in elements_count.items():
+    print(f"{key} : {values}")
